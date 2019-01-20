@@ -1,35 +1,90 @@
 <html>
-    <head>
-        <title>Contact me</title>
-        <script src="js/validateForm.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <form id="contact" actio="" method="post" onclick="return validateForm()">
-                <h3>Quick Contach</h3>
-                <h4>Contact us today, and get reply within 24 hours!</h4>
-                <fieldset>
-                    <input id="txtName" placeholder="Your name" type="text" tabindex="1" required autofocus>
-                </fieldset>
-                <fieldset>
-                    <input id="txtEmail" placeholder="Your Email Address" type="email" tabindex="2" required>
-                </fieldset>
-                <fieldset>
-                    <input id="txtPhone" placeholder="Your Phone number" type="tel" tabindex="3" required>
-                </fieldset>
-                <fieldset>
-                    <input id="txtWebsite" placeholder="Your website starts with http://" type="url" tabindex="4" required>
-                </fieldset>
-                <fieldset>
-                    <input id="txtSubject" placeholder="job offer, appointments, general question etc." type="text" tabindex="5" required>
-                </fieldset>
-                <fieldset>
-                    <input id="txtMessage" placeholder="Type your message here..." tabindex="6" required>
-                </fieldset>
-                <fieldset>
-                    <button name="submit" type="submit" id="contact-submit" data-submit="sending">Submit</button>
-                </fieldset>
-            </form>
-        </div>
-    </body>
+  <head>
+    <title>Contact me</title>
+    <script src="js/validateForm.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <form
+        id="contact"
+        action="/process_contact_submission"
+        method="post"
+        onclick="return validateForm()"
+      >
+        <h3>Quick Contach</h3>
+        <h4>Contact us today, and get reply within 24 hours!</h4>
+        <fieldset>
+          <input
+            id="txtName"
+            name="txtName"
+            placeholder="Your name"
+            type="text"
+            tabindex="1"
+            required
+            autofocus
+          />
+        </fieldset>
+        <fieldset>
+          <input
+            id="txtEmail"
+            name="txtEmail"
+            placeholder="Your Email Address"
+            type="email"
+            tabindex="2"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <input
+            id="txtPhone"
+            name="txtName"
+            placeholder="Your Phone number"
+            type="tel"
+            tabindex="3"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <input
+            id="txtWebsite"
+            name="txtWebsite"
+            placeholder="Your website starts with http://"
+            type="url"
+            tabindex="4"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <input
+            id="txtSubject"
+            name="txtSubject"
+            placeholder="job offer, appointments, general question etc."
+            type="text"
+            tabindex="5"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <input
+            id="txtMessage"
+            name="txtMessage"
+            placeholder="Type your message here..."
+            tabindex="6"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <button
+            name="submit"
+            type="submit"
+            id="contact-submit"
+            data-submit="sending"
+          >
+            Submit
+          </button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
 </html>
